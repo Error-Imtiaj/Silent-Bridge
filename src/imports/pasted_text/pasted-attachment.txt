@@ -1,0 +1,372 @@
+Create a world-class accessibility platform called "Silent Bridge" designed to eliminate communication barriers between deaf, hard-of-hearing, and hearing people. This product should be designed at the quality level of Apple Design Award winners, Stripe, Linear, Notion, and other premium modern software products. The design must be stunning, emotionally impactful, highly polished, responsive, and visually memorable. The product should feel innovative, purposeful, and worthy of winning a global design competition.
+
+MISSION
+
+Silent Bridge exists to help deaf and hearing people communicate effortlessly through camera-based gesture recognition, accessible communication tools, learning systems, custom sign creation, and emergency assistance. The product should demonstrate how technology can improve lives and make communication more inclusive.
+
+DESIGN LANGUAGE
+
+Create a premium design system with:
+
+- Beautiful accessibility-focused visual design
+- Apple-level polish and attention to detail
+- Modern gradients and subtle glassmorphism
+- Soft shadows and depth
+- Large readable typography
+- WCAG-compliant accessibility
+- Dark Mode and Light Mode
+- Responsive desktop, tablet, and mobile layouts
+- Smooth page transitions
+- Elegant micro-interactions
+- Premium onboarding experience
+- High-contrast accessibility options
+- Dyslexia-friendly typography option
+- Beautiful illustrations and visual storytelling
+- Emotional and human-centered design
+
+PRIMARY BRAND MESSAGE
+
+Headline:
+"Communicate Beyond Words"
+
+Subheadline:
+"Helping deaf and hearing people connect through accessible technology."
+
+MAIN FEATURES
+
+1. Landing Page
+
+Create a stunning landing page with:
+
+- Large hero section
+- Accessibility-focused illustrations
+- Real-world communication stories
+- Impact statistics
+- Testimonials
+- Product showcase
+- Feature sections
+- Call-to-action buttons
+- Community section
+- Beautiful animations
+- Purpose-driven storytelling
+
+2. Authentication
+
+Integrate Supabase Authentication.
+
+Support:
+
+- Email Sign Up
+- Email Login
+- Google Login
+- Guest Mode
+
+Create beautiful onboarding flows.
+
+3. User Dashboard
+
+Create a premium dashboard showing:
+
+- Total signs learned
+- Total custom signs created
+- Communication history
+- Learning streaks
+- Achievements
+- Community contributions
+- Emergency profile status
+- Activity timeline
+
+4. Live Communication Mode
+
+Create a real-time communication interface.
+
+Integrate MediaPipe Hands.
+
+Requirements:
+
+- Camera access
+- Real-time hand tracking
+- Hand landmark visualization
+- Gesture detection overlay
+- Confidence score display
+- Large text output
+- Voice playback button
+- Full-screen communication mode
+
+Supported built-in signs:
+
+- Hello
+- Thank You
+- Yes
+- No
+- Help
+- Water
+- Food
+- Doctor
+- Bathroom
+- Emergency
+- Family
+- Medicine
+
+When a gesture is detected:
+
+- Display translated phrase
+- Show confidence level
+- Speak phrase using browser Speech Synthesis API
+- Save interaction to communication history
+
+5. Quick Communication Cards
+
+Create large accessible communication cards.
+
+Categories:
+
+- Emergency
+- Medical
+- Food
+- Travel
+- Family
+- School
+- Workplace
+- Daily Life
+
+Examples:
+
+- I Need Water
+- I Need Help
+- Call My Family
+- I Need Medicine
+- Take Me To A Doctor
+- Thank You
+- Yes
+- No
+
+Cards should support:
+
+- One tap communication
+- Large typography
+- Voice playback
+- Favorites
+- History
+
+6. Conversation Mode
+
+Create a two-way communication interface.
+
+Hearing user types:
+
+- Message appears in large accessible format
+
+Features:
+
+- Full-screen text mode
+- Adjustable font size
+- Dark mode
+- Light mode
+- Conversation history
+- Save conversations
+- Accessibility settings
+
+7. Learn Sign Language
+
+Create a complete learning platform.
+
+Include:
+
+- Beginner Path
+- Intermediate Path
+- Advanced Path
+
+Features:
+
+- Animated demonstrations
+- Progress tracking
+- Quizzes
+- Daily challenges
+- Learning streaks
+- Achievement badges
+- Completion certificates
+
+Store all progress in Supabase.
+
+8. Teach Silent Bridge
+
+This is a core innovation feature.
+
+Allow users to teach the application new signs.
+
+Workflow:
+
+- Open camera
+- Press Record Sign
+- Record gesture for several seconds
+- Capture MediaPipe hand landmark data
+- Preview recording
+- Enter sign name
+- Enter phrase meaning
+- Select category
+- Save sign
+
+Example:
+
+Gesture:
+Custom family gesture
+
+Meaning:
+"I Need My Brother"
+
+After saving:
+
+Whenever the user performs the same gesture again:
+
+- Detect gesture
+- Match saved pattern
+- Display phrase
+- Speak phrase aloud
+
+Support:
+
+- Multiple recordings per sign
+- Accuracy improvements
+- Confidence scoring
+- Gesture management
+- Edit sign
+- Delete sign
+
+Store all custom signs in Supabase.
+
+9. Community Sign Library
+
+Create a community-driven sign sharing platform.
+
+Users can:
+
+- Share custom signs
+- Browse signs
+- Follow creators
+- Like signs
+- Save signs
+- Learn community signs
+
+Include:
+
+- Trending signs
+- New signs
+- Most useful signs
+- Categories
+- Search
+
+Store community content in Supabase.
+
+10. Emergency Mode
+
+Create a dedicated emergency communication system.
+
+Users can store:
+
+- Blood Group
+- Medical Conditions
+- Allergies
+- Emergency Contacts
+- Preferred Language
+- Communication Notes
+
+Emergency Mode should provide:
+
+- One tap emergency display
+- Large readable screen
+- Emergency contact access
+- Medical profile access
+
+11. Accessibility Settings
+
+Include:
+
+- Dark Mode
+- Light Mode
+- High Contrast Mode
+- Dyslexia Friendly Fonts
+- Large Text Mode
+- Reduced Motion
+- Accessibility Presets
+
+SUPABASE INTEGRATION
+
+Fully integrate Supabase.
+
+Create database tables:
+
+profiles
+learning_progress
+communication_history
+custom_signs
+custom_sign_samples
+community_signs
+favorites
+conversations
+emergency_profiles
+achievements
+notifications
+
+Implement:
+
+- Authentication
+- Row Level Security
+- User Profiles
+- Real-time updates
+- CRUD operations
+- User-specific data
+- Community data
+
+MEDIAPIPE INTEGRATION
+
+Integrate MediaPipe Hands.
+
+Requirements:
+
+- Webcam access
+- Hand landmark detection
+- Real-time hand tracking
+- Gesture recording
+- Gesture playback
+- Gesture comparison
+- Confidence calculation
+- Custom sign recognition
+
+Architecture:
+
+Camera
+→ MediaPipe Hands
+→ Hand Landmarks
+→ Gesture Matching Engine
+→ Recognized Phrase
+→ UI Display
+→ Speech Synthesis
+
+SPEECH INTEGRATION
+
+Use browser Speech Synthesis API.
+
+Requirements:
+
+- Speak detected phrases
+- Multiple language support
+- Adjustable speech rate
+- Accessibility controls
+
+ANIMATIONS
+
+Create premium motion design:
+
+- Smooth page transitions
+- Gesture detection effects
+- Success animations
+- Recording animations
+- Camera scanning effects
+- Achievement celebrations
+- Loading states
+- Micro-interactions
+
+FINAL GOAL
+
+The final experience should feel like a revolutionary accessibility platform that demonstrates how design and technology can remove communication barriers. The product should be visually stunning, emotionally impactful, highly polished, technically impressive, and capable of competing for the Building with Purpose Award, Innovative Workflow Award, Runner-Up Award, and Grand Prize.

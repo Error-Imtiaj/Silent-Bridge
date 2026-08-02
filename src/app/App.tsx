@@ -764,14 +764,18 @@ export default function App() {
       {/* Desktop nav */}
       <div className="hidden md:flex items-center gap-1">
         {([
-          // ["live", "Live", Camera],
-          // ["cards", "Quick Cards", MessageSquare],
-          // ["teach", "Teach", BookOpen],
-          // ["community", "Community", Users],
+          ["live", "Live", Camera],
+          ["cards", "Quick Cards", MessageSquare],
+          ["teach", "Teach", BookOpen],
+          ["community", "Community", Users],
         ] as [View, string, any][]).map(([v, label, Icon]) => (
           <button
             key={v}
-            onClick={() => v === "live" ? startLiveMode() : navigate(v)}
+            // TODO NEED TO FIX LATER
+            onClick={()=>{
+              console.log("Navigating to view:", v);
+            }}
+          //  onClick={() => v === "live" ? startLiveMode() : navigate(v)}
             className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium transition-all ${
               view === v
                 ? "bg-primary/15 text-primary"
@@ -797,7 +801,7 @@ export default function App() {
             <Github className="w-4 h-4" />
           </a>
           {/* TODO NEED TO FIX LATER  */}
-          {/* <a
+          <a
             href="https://www.linkedin.com/in/error-imtiaj/"
             target="_blank"
             rel="noopener noreferrer"
@@ -806,7 +810,7 @@ export default function App() {
           >
             <Linkedin className="w-4 h-4" />
           </a>
-          <a
+          {/* <a
             href="https://x.com/Im_Tu_T"
             target="_blank"
             rel="noopener noreferrer"
@@ -921,7 +925,8 @@ export default function App() {
 
           <div className="flex flex-col sm:flex-row gap-3">
             <button
-              onClick={startLiveMode}
+            // TODO NEED TO SETUP LIVE MODE LATER
+              // onClick={startLiveMode}
               className="flex items-center gap-2.5 px-8 py-4 rounded-2xl bg-primary text-primary-foreground font-semibold text-base hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/25"
             >
               <Camera className="w-5 h-5" />
@@ -929,7 +934,8 @@ export default function App() {
               <ArrowRight className="w-4 h-4" />
             </button>
             <button
-              onClick={() => navigate("teach")}
+            // TODO NEED TO SETUP TEACH MODE LATER
+             // onClick={() => navigate("teach")}
               className="flex items-center gap-2.5 px-8 py-4 rounded-2xl bg-card border border-border text-foreground font-semibold text-base hover:bg-muted/30 active:scale-95 transition-all"
             >
               <BookOpen className="w-5 h-5" />
@@ -1204,7 +1210,7 @@ export default function App() {
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               <span className="text-sm">GitHub</span>
             </a>
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/error-imtiaj/"
               target="_blank"
               rel="noopener noreferrer"
@@ -1212,15 +1218,17 @@ export default function App() {
             >
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               <span className="text-sm">LinkedIn</span>
-            </a>
+            </a> */}
             <a
-              href="https://x.com/Im_Tu_T"
+              href="https://www.linkedin.com/in/error-imtiaj/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold transition-all hover:shadow-lg hover:shadow-primary/30 active:scale-95"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              <span className="text-sm">Follow on X</span>
+               <Linkedin className="w-5 h-5 text-muted-background group-hover:text-primary transition-colors" />    
+              {/* <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+               */}
+              <span className="text-sm">LinkedIn</span>
             </a>
           </div>
         </div>

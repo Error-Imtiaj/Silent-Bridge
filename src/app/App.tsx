@@ -1218,7 +1218,7 @@ export default function App() {
             >
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               <span className="text-sm">LinkedIn</span>
-            </a> */}
+            </a> */} 
             <a
               href="https://www.linkedin.com/in/error-imtiaj/"
               target="_blank"

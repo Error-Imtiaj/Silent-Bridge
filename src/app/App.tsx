@@ -772,10 +772,11 @@ export default function App() {
           <button
             key={v}
             // TODO NEED TO FIX LATER
-            onClick={()=>{
-              console.log("Navigating to view:", v);
-            }}
-          //  onClick={() => v === "live" ? startLiveMode() : navigate(v)}
+            // onClick={()=>{
+            //   console.log("Navigating to view:", v);
+            // }}
+           // onClick={() => v === "live" ? startLiveMode() : navigate(v)}
+            onClick={() => v === "live" ? console.log("Navigating to view:"): navigate(v)}
             className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium transition-all ${
               view === v
                 ? "bg-primary/15 text-primary"
